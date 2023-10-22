@@ -1,0 +1,7 @@
+{
+  "name": "pruebaLoginFinal",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

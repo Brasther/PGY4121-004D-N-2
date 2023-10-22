@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <h1 #title>Home</h1>
+
+            <ion-label class="custom-center">Bienvenido, {{ nombreUsuario }}</ion-label>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="login-page">
+    <div class="qr-container">
+      <img src="assets/icon/qr2.png "class="logo-chico" alt="Descripción de la imagen">
+
+      <div class="message">
+        Escanea el código QR
+      </div>
+      <div class="centered-content">
+        <zxing-scanner #scanner start="true" [device]="currentDevice || undefined" (scanSuccess)="handleQrCodeResult($event)" [formats]="formats" class="qr-scanner">
+            <div class="qr-frame"></div>
+        </zxing-scanner>
+      </div>
+    </div>
+</ion-content>
+
+
+
