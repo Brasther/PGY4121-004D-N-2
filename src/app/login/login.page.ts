@@ -33,7 +33,7 @@ export class LoginPage implements OnInit {
       const usuariosJSON = await Preferences.get({ key: 'usuarios'});
       const usuarios: { nombre: string, password: string} [] = usuariosJSON && usuariosJSON.value ? JSON.parse(usuariosJSON.value) : [];
       // Busca al usuario por su nombre de usuario
-      const user = usuarios.find((u: any) => u.usuario === f.nombre);
+      const user = usuarios.find((u: any) => u.usuario === f.nombre && u.password === f.password);
 
         if (user) {
           // Compara el nombre de usuario y la contraseña ingresados
