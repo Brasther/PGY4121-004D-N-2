@@ -32,7 +32,7 @@
     "@capacitor/keyboard": "5.0.6",
     "@capacitor/preferences": "^5.0.6",
     "@capacitor/status-bar": "5.0.6",
-    "@ionic/angular": "^7.5.2",
+    "@ionic/angular": "^7.5.1",
     "@ionic/pwa-elements": "^3.2.2",
     "@ionic/storage-angular": "^4.0.0",
     "@zxing/ngx-scanner": "^16.0.1",
